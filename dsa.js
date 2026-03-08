@@ -66,9 +66,11 @@ console.log("smallest => ", smallest);
 //Calculate average of array elements (sum / total count)
 let sum = 0
 numbers.forEach(number => sum = sum + number)
+console.log("sum => ", numbers.reduce((acc, curr) => curr + acc, 0));
+
 
 let average = numbers.reduce((a,b)=>a+b,0) / numbers.length;
-console.log(sum / numbers.length);
+console.log("average => ", sum / numbers.length);
 
 
 // // 🧩 Array Practice Problems (Optimized ES6 Version)

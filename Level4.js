@@ -37,4 +37,29 @@ for(let fruit in occurance) {
 console.log("most frquency => ", mostFrequecy);
 
 
-let arr = []
+
+let arr = [1,2,3,4,5];
+let target = 6;
+
+let left = 0;
+let right = arr.length - 1;
+let count = 0;
+
+while(left < right){
+
+    let sum = arr[left] + arr[right];
+
+    if(sum === target){
+        count++;
+        left++;
+        right--;
+    }
+    else if(sum < target){
+        left++;
+    }
+    else{
+        right--;
+    }
+}
+
+console.log(count);

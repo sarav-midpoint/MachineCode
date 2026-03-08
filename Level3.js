@@ -75,3 +75,13 @@ function findSecondSmallest(numbers) {
 }
 
 console.log("findSecondSmallest(numbers) => ", findSecondSmallest(numbers));
+
+
+// function mystery(n) {
+//   if(n === 0) {
+//     return 1
+//   }
+//   return n * mystery(n - 2);
+// }
+
+// console.log(mystery(5));
